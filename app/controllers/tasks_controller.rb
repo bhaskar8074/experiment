@@ -12,8 +12,8 @@ class TasksController < ApplicationController
 
   def index
     @tasks = Task.all
-    readme_content = File.read("#{Rails.root}/README.md")
-    
+    readme_content = File.read("#{Rails.root}/app/views/docs/ruby_on_rails/intro_to_ruby_on_rails.md")
+    puts "#{Rails.root}/README.md"
     # Convert Markdown to HTML using Redcarpet
     markdown = Redcarpet::Markdown.new(HTML.new, fenced_code_blocks: true)
     @html_content = markdown.render(readme_content)

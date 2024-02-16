@@ -2,13 +2,16 @@
 .highlight {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 10px;
   margin-bottom: 20px; /* Add some spacing between code blocks */
+  
 }
 
 .highlight pre {
   margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .highlight pre code {
